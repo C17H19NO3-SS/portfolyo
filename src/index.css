@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-zinc-900 text-white/90 font-[roboto];
+}
+
+.btn-primary-group {
+  & > button {
+    @apply relative z-0 overflow-hidden bg-indigo-500 text-white font-bold py-2 px-6 rounded-br-2xl before:absolute before:bottom-0 before:right-0 before:-z-10 before:w-4 before:h-4 before:bg-indigo-700 before:rounded-tl-lg before:shadow-[-2px_-2px_5px_rgba(0,0,0,0.2)] before:transition-all before:duration-300 before:ease-out hover:before:w-full hover:before:h-full hover:before:rounded-none hover:before:shadow-none hover:bg-indigo-600 transition-colors;
+  }
+}
